@@ -1,0 +1,33 @@
+/* header */
+
+.nosaltres {
+    width: 100vw;
+}
+
+/* main */
+
+.section-nosaltres {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.section-nosaltres p {
+    margin: 20px 0;
+}
+
+.cafe-paisajes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cafe-paisajes img {
+    width: 33%;
+    object-fit: cover;
+}
+

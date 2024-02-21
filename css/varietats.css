@@ -1,0 +1,41 @@
+/* header */
+
+.varietats {
+    width: 100%;
+}
+
+/* main */
+
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+h3 {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.section-varietats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+}
+
+.producto {
+    width: 100%;
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    border: 5px solid var(--color-back);
+}
+
+.producto img {
+    width: 30%;
+}
+
+.producto div {
+    padding: 0 20px;
+}
