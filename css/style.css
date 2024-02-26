@@ -1,3 +1,5 @@
+/* globales */
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
@@ -18,7 +20,6 @@
     --p-size: 1.4rem;
 }
 
-/* globales */
 
 .width-content {
     max-width: var(--width-content);
@@ -34,7 +35,9 @@ li {
 
 /* titulos */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-titulos);
 
 }
@@ -215,4 +218,93 @@ footer a:hover {
 ul span {
     font-size: var(--p-size);
     font-weight: bold;
+}
+
+@media (width < 768px) {
+
+
+    header div {
+        justify-content: center;
+    }
+
+    h1 {
+        right: auto;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .card {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    .card img,
+    video {
+        width: 80%;
+    }
+    
+    .card div {
+        width: 90%;
+    }
+
+    .opinion div {
+        flex-direction: column;
+    }
+    .opinion div>article {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 20px;
+        align-items: flex-end;
+    
+    }
+
+    footer>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto-footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .selector-footer {
+        width: 100%;
+    }
+
+    ul span {
+        font-size: 0.8rem;
+    }
+
+    .email {
+        color: var(--color-claro);
+        font-size: 0.8rem;
+    }
+    
+    .logos-redes {
+        width: 40%;
+    }
+    
+    .redes {
+        width: 5vw;
+    }
+
+}
+
+@media (500px > width) {
+
+    .selector-footer {
+        flex-wrap: wrap;
+    }
+
+    .selector-footer ul {
+        width: 50%;
+        margin: 15px 0;
+        text-align: center;
+    }
 }
